@@ -1,0 +1,20 @@
+# Dependencies & build output
+node_modules
+dist
+*.tsbuildinfo
+.vercel
+.DS_Store
+
+# Personal documents — never publish (contain phone number and private details)
+CV_Wilver.md
+CV*.md
+CV*.pdf
+*.docx
+
+# Secrets & environment
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
