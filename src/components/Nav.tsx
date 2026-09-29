@@ -6,7 +6,7 @@ import { duration, ease, springs, stagger } from '../lib/motion'
 import { useSmoothScroll } from '../lib/scroll'
 import { BrandMark } from './BrandMark'
 
-const SECTIONS = ['work', 'journey', 'skills', 'contact'] as const
+const SECTIONS = ['skills', 'work', 'journey', 'contact'] as const
 type SectionId = (typeof SECTIONS)[number]
 
 /** Which section sits in the middle band of the viewport right now. */

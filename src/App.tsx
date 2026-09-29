@@ -54,9 +54,9 @@ export default function App() {
       <main id="main" inert={!ready}>
         <Hero ready={ready} />
         <About />
+        <Skills />
         <Projects />
         <Journey />
-        <Skills />
         <Contact />
       </main>
       <Footer />
