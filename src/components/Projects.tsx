@@ -6,7 +6,6 @@ import { duration, ease, springs } from '../lib/motion'
 import { ArrowUpRight, GithubIcon, LockIcon } from './icons'
 import { RevealGroup, RevealItem, SectionHeading } from './Reveal'
 import { CaelumVisual } from './visuals/CaelumVisual'
-import { LealVisual } from './visuals/LealVisual'
 import { StratumVisual } from './visuals/StratumVisual'
 
 type Project = Content['projects']['items'][number]
@@ -14,7 +13,6 @@ type Project = Content['projects']['items'][number]
 const visuals: Record<ProjectId, ComponentType> = {
   caelum: CaelumVisual,
   stratum: StratumVisual,
-  leal: LealVisual,
 }
 
 /**

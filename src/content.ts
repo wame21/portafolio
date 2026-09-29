@@ -4,7 +4,7 @@
 
 export type Lang = 'es' | 'en'
 
-export type ProjectId = 'caelum' | 'stratum' | 'leal'
+export type ProjectId = 'caelum' | 'stratum'
 
 const links = {
   email: 'merazw8@gmail.com',
@@ -12,7 +12,6 @@ const links = {
   caelumRepo: 'https://github.com/wame21/erpcaelum',
   caelumLive: 'https://caelumjewerly.vercel.app',
   stratumRepo: 'https://github.com/wame21/stratum-pos',
-  lealRepo: 'https://github.com/wame21/Leal-Cafe',
 }
 
 export const site = {
@@ -26,7 +25,6 @@ export const site = {
 const tech = {
   caelum: ['React 19', 'TanStack Start', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Supabase', 'PostgreSQL · RLS', 'jsPDF'],
   stratum: ['ESP32', 'MicroPython', 'Flutter', 'Supabase', 'MQTT / TLS', 'BLE', 'HiveMQ Cloud'],
-  leal: ['Python', 'FastAPI', 'Pydantic', 'Stripe PaymentIntents'],
 }
 
 const es = {
@@ -119,26 +117,6 @@ const es = {
         repoPrivate: false,
         live: '',
       },
-      {
-        id: 'leal' as ProjectId,
-        index: '03',
-        title: 'Leal Café',
-        kind: 'Lealtad · Pagos',
-        role: 'Backend',
-        tagline: 'Middleware de lealtad y pagos: cada café cobrado se convierte en un sello.',
-        description:
-          'Backend que une el programa de recompensas con el cobro: API en FastAPI con arquitectura en capas e inyección de dependencias, validación con Pydantic y un flujo cliente/servidor de Stripe PaymentIntents.',
-        highlights: [
-          'PaymentIntents: el servidor crea el cobro y el cliente lo confirma',
-          'Capas desacopladas con inyección de dependencias',
-          'Credenciales aisladas: las llaves secretas nunca llegan al cliente',
-        ],
-        tech: tech.leal,
-        repo: links.lealRepo,
-        // Set to false once the repository is public so the card links to it.
-        repoPrivate: true,
-        live: '',
-      },
     ],
   },
   demos: {
@@ -168,16 +146,6 @@ const es = {
       restore: 'Restaurar conexión',
       online: 'En línea',
       offline: 'Sin conexión — y se sigue vendiendo',
-    },
-    leal: {
-      card: 'Tarjeta de lealtad',
-      buy: 'Comprar un café',
-      price: '$45',
-      processing: 'Procesando…',
-      steps: ['PaymentIntent creado', 'Confirmado por el cliente', 'Sello otorgado'],
-      reward: '¡Café gratis desbloqueado!',
-      reset: 'Nueva tarjeta',
-      stamps: 'sellos',
     },
   },
   journey: {
@@ -339,26 +307,6 @@ const en: Content = {
         repoPrivate: false,
         live: '',
       },
-      {
-        id: 'leal',
-        index: '03',
-        title: 'Leal Café',
-        kind: 'Loyalty · Payments',
-        role: 'Backend',
-        tagline: 'Loyalty and payments middleware: every coffee paid becomes a stamp.',
-        description:
-          'A backend that ties the rewards program to checkout: a FastAPI service with layered architecture and dependency injection, Pydantic validation and a client/server Stripe PaymentIntents flow.',
-        highlights: [
-          'PaymentIntents: the server creates the charge, the client confirms it',
-          'Decoupled layers wired through dependency injection',
-          'Credential isolation: secret keys never reach the client',
-        ],
-        tech: tech.leal,
-        repo: links.lealRepo,
-        // Set to false once the repository is public so the card links to it.
-        repoPrivate: true,
-        live: '',
-      },
     ],
   },
   demos: {
@@ -388,16 +336,6 @@ const en: Content = {
       restore: 'Restore connection',
       online: 'Online',
       offline: 'Offline — and still selling',
-    },
-    leal: {
-      card: 'Loyalty card',
-      buy: 'Buy a coffee',
-      price: '$45',
-      processing: 'Processing…',
-      steps: ['PaymentIntent created', 'Confirmed by client', 'Stamp granted'],
-      reward: 'Free coffee unlocked!',
-      reset: 'New card',
-      stamps: 'stamps',
     },
   },
   journey: {
@@ -474,5 +412,4 @@ export const content: Record<Lang, Content> = { es, en }
 export const accents: Record<ProjectId, string> = {
   caelum: '#c9cedb',
   stratum: '#7cc4ae',
-  leal: '#d9a66f',
 }

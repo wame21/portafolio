@@ -1,15 +1,15 @@
 # Wilver Meraz — Portafolio
 
 Portafolio personal con temática astronómica: educación, experiencia y proyectos
-(CAELUM, Stratum, Leal Café), con demos interactivas de cada uno.
+(CAELUM y Stratum), con una demo interactiva de cada uno.
 
 - **Loader:** la constelación de Casiopea (la «W») se enciende estrella por estrella
   y vuela hasta convertirse en el logo del nav.
 - **Hero:** un planeta con anillos cuya cara iluminada sigue al cursor («tu cursor es el sol»).
 - **Cielo:** canvas con 3 capas de paralaje, parpadeo y estrellas fugaces; el tono
   cambia según el proyecto en pantalla.
-- **Demos:** motor de precios de CAELUM, simulación fog‑to‑cloud de Stratum
-  (corta el internet y mira la cola en el ESP32) y la tarjeta de lealtad de Leal Café.
+- **Demos:** motor de precios de CAELUM y simulación fog‑to‑cloud de Stratum
+  (corta el internet y mira la cola en el ESP32).
 - **Pie de página:** hora local de Guasave y la fase lunar real del día.
 - Bilingüe (ES/EN), accesible (`prefers-reduced-motion`, `prefers-reduced-transparency`,
   `prefers-contrast`, navegación por teclado) y responsive.
@@ -34,9 +34,11 @@ npm run preview   # sirve dist/ en http://localhost:4173
 Todo el texto está en [`src/content.ts`](src/content.ts), en español e inglés.
 Si falta una clave en inglés, TypeScript marca el error al compilar.
 
-Pendientes:
-- `Leal-Cafe` es privado, así que la tarjeta muestra «Repositorio privado».
-  Cuando lo hagas público, cambia `repoPrivate: true` a `false` (en ambos idiomas).
+Notas:
+- Para agregar un proyecto, añádelo en `projects.items` (ambos idiomas), su color en
+  `accents` y su demo en `visuals` dentro de `src/components/Projects.tsx`.
+  Si el repositorio es privado, usa `repoPrivate: true` y la tarjeta mostrará
+  «Repositorio privado» en lugar de un enlace roto.
 - Si quieres mostrar fechas de graduación, edita `period` en `journey.items`.
 
 ## Compartir
