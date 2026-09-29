@@ -9,7 +9,6 @@ export type ProjectId = 'caelum' | 'stratum'
 const links = {
   email: 'merazw8@gmail.com',
   github: 'https://github.com/wame21',
-  caelumRepo: 'https://github.com/wame21/erpcaelum',
   caelumLive: 'https://caelumjewerly.vercel.app',
   stratumRepo: 'https://github.com/wame21/stratum-pos',
 }
@@ -94,8 +93,8 @@ const es = {
           'Costos históricos inmutables para garantizar integridad contable',
         ],
         tech: tech.caelum,
-        repo: links.caelumRepo,
-        repoPrivate: false,
+        repo: '',
+        repoPrivate: true,
         live: links.caelumLive,
       },
       {
@@ -284,8 +283,8 @@ const en: Content = {
           'Immutable historical costs to guarantee accounting integrity',
         ],
         tech: tech.caelum,
-        repo: links.caelumRepo,
-        repoPrivate: false,
+        repo: '',
+        repoPrivate: true,
         live: links.caelumLive,
       },
       {
